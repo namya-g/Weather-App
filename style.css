@@ -48,10 +48,22 @@ header {
     justify-content: space-around;
     margin: 4% 2% 4% 2%;
 }
+.hour {
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
 #ten-day {
     display: flex;
     justify-content: space-around;
     margin: 4% 2% 4% 2%;
+}
+.day {
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
 }
 footer {
     padding: 2%;
