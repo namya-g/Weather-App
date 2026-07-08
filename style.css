@@ -9,17 +9,54 @@ html,body{
     background: linear-gradient(to bottom,#a1c4fd,#d8b4e2);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    header {
-        padding: 2%;
-        display: flex;
-        justify-content: space-between;
-        background-color: rgba(255, 255, 255, 0.2);
-        }
-    #today{
-        margin-left: 2%;
-        width: 66%;
-        padding: 2%;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 20px;
-    }
+}
+header {
+    padding: 2%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#top-row {
+    margin: 4% 2% 4% 2%;
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#today {
+    width: 66%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+#now {
+    margin-bottom: 4%;
+}
+#details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#sun {
+    width: 33%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+#hourly {
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 2% 4% 2%;
+}
+#ten-day {
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 2% 4% 2%;
+}
+footer {
+    padding: 2%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
 }
