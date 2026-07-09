@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -16,14 +15,14 @@
         </div>
     </header>
     <main>
-        <h2>City Name</h2>
+        <h2 id="name">City Name</h2>
         <div id=top-row>
             <div id="today">
                 <div id="now">
                     <p>Now</p>
                     <span>temp-emoji</span>
-                    <span>temp</span>
-                    <p>Feels like</p>
+                    <span id="temp">temp</span>
+                    <p>Feels like <span id="like"></span></p>
                 </div>
                 <div id="details">
                     <div>
@@ -31,7 +30,7 @@
                         <div>
                             UV Index
                             <br>
-                            uv-index
+                            <span id="uv">uv-index</span>
                         </div>
                     </div>
                     <div>
@@ -39,7 +38,7 @@
                         <div>
                             Wind
                             <br>
-                            wind-speed
+                            <span id="wind">wind-speed</span>
                         </div>
                     </div>
                     <div>
@@ -47,7 +46,7 @@
                         <div>
                             Precipitation
                             <br>
-                            precipitation-chance
+                            <span id="rain">precipitation-chance</span>
                         </div>
                     </div>
                     <div>
@@ -55,7 +54,7 @@
                         <div>
                             Visibility
                             <br>
-                            visibility-value
+                            <span id="vsbt">visibility-value</span>
                         </div>
                     </div>
                     <div>
@@ -63,16 +62,16 @@
                         <div>
                             Humidity
                             <br>
-                            humidity-value
+                            <span id="hmdt">humidity-value</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="sun">
                 <p>Today</p>
-                Sunrise Time <span>rise-time</span>
+                Sunrise Time <span id="rise">rise-time</span>
                 <br>
-                Sunset Time <span>set-time</span>
+                Sunset Time <span id="set">set-time</span>
             </div>
         </div>
         <h3>Hourly Forecast</h3>
@@ -153,5 +152,6 @@
             View Source Code on <a href="repo--url">GitHub</a>
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
