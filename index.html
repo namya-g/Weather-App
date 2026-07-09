@@ -76,71 +76,35 @@
         </div>
         <h3>Hourly Forecast</h3>
         <div id="hourly">
-            <div class="hour">
-                temp
-                <br>
-                precipitation-chance
-                <br>
-                weather-emoji
-                <br>
-                time
-            </div> 
-            <div>
-                temp
-                <br>
-                precipitation-chance
-                <br>
-                weather-emoji
-                <br>
-                time
-            </div>
-            <div>
-                temp
-                <br>
-                precipitation-chance
-                <br>
-                weather-emoji
-                <br>
-                time
-            </div>
-            <div>
-                temp
-                <br>
-                precipitation-chance
-                <br>
-                weather-emoji
-                <br>
-                time
-            </div>
+            <template id="hour-card">
+                <div class="hour">
+                    <span class="htemp">temp</span>
+                    <br>
+                    <span class="hrain">precipitation-chance</span>
+                    <br>
+                    weather-emoji
+                    <br>
+                    <span class="hour-time">time</span>
+                </div>
+            </template>
         </div>
         <h3>10 Day Forecast</h3>
         <div id="ten-day">
-            <div class="day">
-                day
-                <br>
-                temp-emoji
-                <br>
-                Precipitation <span>precipitation-chance</span>
-                <br>
-                high-temp/low-temp
-                <br>
-                Humidity <span>humidity-value</span>
-                <br>
-                UV Index <span>uv-index</span>
-            </div>
-            <div>
-                day
-                <br>
-                temp-emoji
-                <br>
-                Precipitation <span>precipitation-chance</span>
-                <br>
-                high-temp/low-temp
-                <br>
-                Humidity <span>humidity-value</span>
-                <br>
-                UV Index <span>uv-index</span>
-            </div>
+            <template id="day-card">
+                <div class="day">
+                    <span class="tday">day</span>
+                    <br>
+                    temp-emoji
+                    <br>
+                    Precipitation <span class="train">precipitation-chance</span>
+                    <br>
+                    <span class="thigh">high-temp/</span><span class="tlow">low-temp</span>
+                    <br>
+                    Humidity <span class="thmdt">humidity-value</span>
+                    <br>
+                    UV Index <span class="tuv">uv-index</span>
+                </div>
+            </template>
         </div>
     </main>
     <footer>
